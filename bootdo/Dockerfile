@@ -1,6 +1,6 @@
 FROM 10.45.80.1/public/centos7_java8_tomcat8_base:8.0.35
 MAINTAINER gengbin
-COPY /home/ZCIPClient/workpath/33582/code/bootdo/target/bootdo-2.0.0.jar /usr/tomcat/tomcat8.0/webserver/webapps
+COPY bootdo/target/bootdo-2.0.0.jar /usr/tomcat/tomcat8.0/webserver/webapps
 EXPOSE 8080
 RUN chmod +x /usr/tomcat/tomcat8.0/webserver/bin/*.sh
 CMD ["start"]
