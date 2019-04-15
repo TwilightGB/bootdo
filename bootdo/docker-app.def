@@ -1,0 +1,11 @@
+#!/bin/bash
+
+APP=( "web" )
+web=(
+     "sleep 13579" # start command
+     "13579"       # process key
+     "echo OK"    # liveness check command
+     "OK"         # liveness successful code
+     "echo OK"    # readiness check command
+     "OK"         # readiness successful code
+    )
