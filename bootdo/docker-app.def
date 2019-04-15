@@ -2,8 +2,8 @@
 
 APP=( "web" )
 web=(
-     "sleep 13579" # start command
-     "13579"       # process key
+     "nohup  java  -jar  bootdo-2.0.0.jar &" # start command
+     "APP_NAME:bootdo"       # process key
      "echo OK"    # liveness check command
      "OK"         # liveness successful code
      "echo OK"    # readiness check command
